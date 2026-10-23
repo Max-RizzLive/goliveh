@@ -32,7 +32,12 @@ header nav{display:flex;gap:22px;font-size:.92rem;color:var(--mut)}
 @media(max-width:820px){.hero .w{grid-template-columns:1fr}}
 .phone{aspect-ratio:9/18;border:6px solid var(--bd);border-radius:28px;background:linear-gradient(160deg,var(--card),var(--bg2));display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font-size:.85rem;padding:12px}
 .phones{display:flex;gap:16px;justify-content:center}
+.phone.ip{aspect-ratio:auto;padding:0;overflow:hidden;border-radius:24px}
+.phone.ip img{display:block;width:100%;height:auto}
 .phones .phone{width:150px}
+.shots{align-items:start}
+.shots figure{margin:0}
+.shots figcaption{text-align:center;color:var(--mut);font-size:.85rem;margin-top:8px}
 .phones .phone:nth-child(2){transform:translateY(24px)}
 .alt{background:var(--bg2)}
 .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
@@ -83,8 +88,8 @@ footer a{margin:0 10px}
 <div class="cta"><a class="btn" href="#pricing">See pricing</a><a class="btn o" href="#contact">Request live demo</a></div>
 </div>
 <div class="phones">
-<div class="phone">[Screenshot: Home / Live rooms]</div>
-<div class="phone">[Screenshot: Voice room]</div>
+<div class="phone ip"><img src="images/login.jpg" alt="Login screen" loading="lazy"></div>
+<div class="phone ip"><img src="images/home.jpg" alt="Home screen" loading="lazy"></div>
 </div>
 </div></section>
 
@@ -107,14 +112,13 @@ footer a{margin:0 10px}
 <!-- SCREENSHOTS -->
 <section id="screens"><div class="w">
 <h2>App screenshots</h2>
-<p class="sub">Show the frontend (user app). Replace each box with a real screenshot.</p>
+<p class="sub">A look inside the user app: profile, wallet, coins, diamonds and the merchant portal.</p>
 <div class="shots">
-<div class="phone">[Login / Sign up]</div>
-<div class="phone">[Home feed]</div>
-<div class="phone">[Voice room]</div>
-<div class="phone">[Live stream]</div>
-<div class="phone">[Gifts panel]</div>
-<div class="phone">[Profile / Wallet]</div>
+<figure><div class="phone ip"><img src="images/profile.jpg" alt="User profile" loading="lazy"></div><figcaption>Profile</figcaption></figure>
+<figure><div class="phone ip"><img src="images/me.jpg" alt="Me screen: VIP, coins, diamonds, levels" loading="lazy"></div><figcaption>Me: VIP &amp; levels</figcaption></figure>
+<figure><div class="phone ip"><img src="images/coins.jpg" alt="Coins wallet with recharge methods" loading="lazy"></div><figcaption>Coins wallet</figcaption></figure>
+<figure><div class="phone ip"><img src="images/diamonds.jpg" alt="Diamonds wallet with cash out" loading="lazy"></div><figcaption>Diamonds &amp; cash out</figcaption></figure>
+<figure><div class="phone ip"><img src="images/merchant.jpg" alt="Merchant portal" loading="lazy"></div><figcaption>Merchant portal</figcaption></figure>
 </div>
 </div></section>
 
